@@ -1,5 +1,7 @@
 require 'sinatra'
 
+set views: settings.root + '/templates'
+
 get '/' do
-  'our fist app'
+  erb :index
 end
